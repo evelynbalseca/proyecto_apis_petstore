@@ -1,0 +1,3693 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"7a1f0874-917c-46d5-886b-7265e489ae29",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>features.datos_mascota</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">4</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2025-09-14 06:52:06 p. m.</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:10]"><span>[1:10]</span> <span>Añadir una mascota a la tienda</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:41]"><span>[2:41]</span> <span>Consultar la mascota ingresada previamente (Búsqueda por ID)</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:48]"><span>[3:48]</span> <span>Actualizar el nombre de la mascota y el estatus de la mascota a “sold”</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:65]"><span>[4:65]</span> <span>Consultar la mascota modificada por estatus (Búsqueda por estatus)</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/datos_mascota.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Datos mascotas en pagina petstore.swagger - Evelyn Balseca</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:10]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:10]</span>
+                <span class="scenario-name">Añadir una mascota a la tienda</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1701</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:10]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:10]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://petstore.swagger.io/v2&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">66</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:10]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;pet&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">42</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.12">{
+  &quot;id&quot;: 12345,
+   &quot;category&quot;: {
+      &quot;id&quot;: 111,
+      &quot;name&quot;: &quot;Perro&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [&quot;F:\EvelynDocumentos&quot;],
+    &quot;tags&quot;: [
+     {
+      &quot;id&quot;: 22,
+      &quot;name&quot;: &quot;Mascota&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;available&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1470</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.32">18:52:04.306 request:
+1 &gt; POST https://petstore.swagger.io/v2/pet
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 156
+1 &gt; Host: petstore.swagger.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.4.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;id&quot;:12345,&quot;category&quot;:{&quot;id&quot;:111,&quot;name&quot;:&quot;Perro&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;F:velynDocumentos&quot;],&quot;tags&quot;:[{&quot;id&quot;:22,&quot;name&quot;:&quot;Mascota&quot;}],&quot;status&quot;:&quot;available&quot;}
+
+18:52:05.340 response time in milliseconds: 1023
+1 &lt; 200
+1 &lt; Date: Sun, 14 Sep 2025 23:52:05 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Server: Jetty(9.2.9.v20150224)
+{&quot;id&quot;:12345,&quot;category&quot;:{&quot;id&quot;:111,&quot;name&quot;:&quot;Perro&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;F:velynDocumentos&quot;],&quot;tags&quot;:[{&quot;id&quot;:22,&quot;name&quot;:&quot;Mascota&quot;}],&quot;status&quot;:&quot;available&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.id == 12345</span>
+      </div>
+    </div>
+    <div class="time-cell passed">37</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.category == { id: 111, name: &quot;Perro&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.name == &quot;doggie&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.status == &quot;available&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &quot;Mascota creada:&quot;, response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">81</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.38">18:52:05.470 [print] Mascota creada: {
+  &quot;id&quot;: 12345,
+  &quot;category&quot;: {
+    &quot;id&quot;: 111,
+    &quot;name&quot;: &quot;Perro&quot;
+  },
+  &quot;name&quot;: &quot;doggie&quot;,
+  &quot;photoUrls&quot;: [
+    &quot;F:velynDocumentos&quot;
+  ],
+  &quot;tags&quot;: [
+    {
+      &quot;id&quot;: 22,
+      &quot;name&quot;: &quot;Mascota&quot;
+    }
+  ],
+  &quot;status&quot;: &quot;available&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:41]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:41]</span>
+                <span class="scenario-name">Consultar la mascota ingresada previamente (Búsqueda por ID)</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>366</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:41]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:41]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://petstore.swagger.io/v2&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:41]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;pet&#39;, 12345</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">354</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.43">18:52:05.501 request:
+1 &gt; GET https://petstore.swagger.io/v2/pet/12345
+1 &gt; Content-Type: application/json
+1 &gt; Host: petstore.swagger.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.4.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:52:05.851 response time in milliseconds: 348
+1 &lt; 200
+1 &lt; Date: Sun, 14 Sep 2025 23:52:05 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Server: Jetty(9.2.9.v20150224)
+{&quot;id&quot;:12345,&quot;category&quot;:{&quot;id&quot;:111,&quot;name&quot;:&quot;Perro&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;F:velynDocumentos&quot;],&quot;tags&quot;:[{&quot;id&quot;:22,&quot;name&quot;:&quot;Mascota&quot;}],&quot;status&quot;:&quot;available&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.id == 12345</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.46">
+      <div class="step-ref passed">46</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &quot;Mascota consultada:&quot;, response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.46">18:52:05.854 [print] Mascota consultada: {
+  &quot;id&quot;: 12345,
+  &quot;category&quot;: {
+    &quot;id&quot;: 111,
+    &quot;name&quot;: &quot;Perro&quot;
+  },
+  &quot;name&quot;: &quot;doggie&quot;,
+  &quot;photoUrls&quot;: [
+    &quot;F:velynDocumentos&quot;
+  ],
+  &quot;tags&quot;: [
+    {
+      &quot;id&quot;: 22,
+      &quot;name&quot;: &quot;Mascota&quot;
+    }
+  ],
+  &quot;status&quot;: &quot;available&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:48]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:48]</span>
+                <span class="scenario-name">Actualizar el nombre de la mascota y el estatus de la mascota a “sold”</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>370</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:48]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:48]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://petstore.swagger.io/v2&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:48]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.49">
+      <div class="step-ref passed">49</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;pet&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.50">
+      <div class="step-ref passed">50</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.50">{
+  &quot;id&quot;: 12345,
+   &quot;name&quot;: &quot;tarzan&quot;,
+   &quot;status&quot;: &quot;sold&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.59">
+      <div class="step-ref passed">59</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method put</span>
+      </div>
+    </div>
+    <div class="time-cell passed">362</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.59">18:52:05.871 request:
+1 &gt; PUT https://petstore.swagger.io/v2/pet
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 44
+1 &gt; Host: petstore.swagger.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.4.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;id&quot;:12345,&quot;name&quot;:&quot;tarzan&quot;,&quot;status&quot;:&quot;sold&quot;}
+
+18:52:06.226 response time in milliseconds: 355
+1 &lt; 200
+1 &lt; Date: Sun, 14 Sep 2025 23:52:06 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Server: Jetty(9.2.9.v20150224)
+{&quot;id&quot;:12345,&quot;name&quot;:&quot;tarzan&quot;,&quot;photoUrls&quot;:[],&quot;tags&quot;:[],&quot;status&quot;:&quot;sold&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.60">
+      <div class="step-ref passed">60</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.61">
+      <div class="step-ref passed">61</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.name == &quot;tarzan&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.62">
+      <div class="step-ref passed">62</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.status == &quot;sold&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.63">
+      <div class="step-ref passed">63</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &quot;Mascota actualizada:&quot;, response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.63">18:52:06.236 [print] Mascota actualizada: {
+  &quot;id&quot;: 12345,
+  &quot;name&quot;: &quot;tarzan&quot;,
+  &quot;photoUrls&quot;: [
+  ],
+  &quot;tags&quot;: [
+  ],
+  &quot;status&quot;: &quot;sold&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:65]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:65]</span>
+                <span class="scenario-name">Consultar la mascota modificada por estatus (Búsqueda por estatus)</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>513</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:65]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:65]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://petstore.swagger.io/v2&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:65]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.66">
+      <div class="step-ref passed">66</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;pet&#39;, &#39;findByStatus&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.67">
+      <div class="step-ref passed">67</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param status = &quot;sold&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.68">
+      <div class="step-ref passed">68</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">467</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.68">18:52:06.252 request:
+1 &gt; GET https://petstore.swagger.io/v2/pet/findByStatus?status=sold
+1 &gt; Content-Type: application/json
+1 &gt; Host: petstore.swagger.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.4.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:52:06.714 response time in milliseconds: 446
+1 &lt; 200
+1 &lt; Date: Sun, 14 Sep 2025 23:52:06 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Server: Jetty(9.2.9.v20150224)
+[{&quot;id&quot;:7777,&quot;category&quot;:{&quot;id&quot;:1234567,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;jim&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:1234567,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:98765432,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;Efra&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1655354144,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;LlsgPAg4&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:462462202,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;RGWhENda&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1755688644,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;tovBmajh&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:81632057,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;23fgHnJG&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1422828219,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;b3ywR0IQ&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:207033267,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;Nlc8dt1n&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1068738928,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;xUSCQzJp&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:967659614,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;316GgHbG&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:692573057,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;OMuBcwpS&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:2031889321,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;WhXyixem&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:461864333,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;agvqLpPI&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:378643708,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;OgBjrpZh&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:98863568,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;wlGmo6We&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:257252659,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;MreHmbgz&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:786890446,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;CatXdDQI&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:258247041,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;vMBL4vXP&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:2139196856,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;xUsCDccR&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1110950441,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;1bLgJ3mN&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:180655126,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;6pA29lIL&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1290588043,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;hPSzjQx1&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:573838235,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;x7OaCB7U&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:199521599,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;L8wAe7vI&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:996473691,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;pz3xZHqW&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:916336591,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;2qEki81f&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:2029653287,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;uIBF1Eno&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1664101672,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;BZAkc0cY&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:460917259,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;tJEjvGWJ&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1090535125,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;aVk6EdfK&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1733286741,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;coh3FnVZ&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:58574145,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;xvlzllKR&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:749750508,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;n5tUu2ye&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1932914696,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;nJK7JOnk&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:451217170,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;Bz6RLzYP&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:686421872,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;6gjlIcWT&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1470905336,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;sRdGijHm&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1375076293,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;IkDZGleQ&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:458480911,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;xytas55T&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1696258829,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;9CUTKnBo&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1642821359,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;p0wDuB0A&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1806602361,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;oY2CVlWc&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1319035473,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;oubgki3h&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1859971646,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;VZGQJbVx&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1834249539,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;2xWhxmpA&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:182229744,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;k2tMmQ1U&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1688854245,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;hGZ6XjVz&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:407960427,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;1vubDvb9&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1929798993,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;vSOmYOtb&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1562990756,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;QZCKJrGs&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:575740669,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;n2q7wdf7&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1366754438,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;hzqsiHHo&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1317753204,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;BCAFgEEo&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:2107639067,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;u2Au1vAJ&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1729469705,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;YEw9JYtS&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:2079101853,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;ZQpQcjxL&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1705356575,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;m7D41aoo&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1090730758,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;0SS2MUnP&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1827089105,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;hqZrGrPi&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1401351466,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;6d70swKk&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1709610978,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;rNyIOQsg&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:495196473,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;lqcH67YT&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:580346374,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;KBkxh3Bq&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/pet.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:2001,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;Dogs&quot;},&quot;name&quot;:&quot;DogUpdated&quot;,&quot;photoUrls&quot;:[],&quot;tags&quot;:[],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:8386366,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;DeniseMooney&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:13,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;cats&quot;},&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1757870854,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;Dogs&quot;},&quot;name&quot;:&quot;Buddy&quot;,&quot;photoUrls&quot;:[&quot;https://example.com/photo.png&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1757870891,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;Dogs&quot;},&quot;name&quot;:&quot;Buddy&quot;,&quot;photoUrls&quot;:[&quot;https://example.com/photo.png&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:57357,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dogs&quot;},&quot;name&quot;:&quot;Efra&quot;,&quot;photoUrls&quot;:[&quot;https://example.com/photo1&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:758056,&quot;category&quot;:{&quot;id&quot;:637,&quot;name&quot;:&quot;string&quot;},&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:30,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:413242,&quot;category&quot;:{&quot;id&quot;:390,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;REiNgfpo&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:40,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:75602,&quot;category&quot;:{&quot;id&quot;:356445544,&quot;name&quot;:&quot;mallard&quot;},&quot;name&quot;:&quot;Jasper&quot;,&quot;photoUrls&quot;:[&quot;https://picsum.photos/seed/5398682/600/400&quot;],&quot;tags&quot;:[{&quot;id&quot;:8670,&quot;name&quot;:&quot;maroon&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:50293,&quot;category&quot;:{&quot;id&quot;:588595292,&quot;name&quot;:&quot;rhinoceros&quot;},&quot;name&quot;:&quot;Tuna&quot;,&quot;photoUrls&quot;:[&quot;https://picsum.photos/seed/31/600/400&quot;],&quot;tags&quot;:[{&quot;id&quot;:2750945,&quot;name&quot;:&quot;cyan&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:5843592,&quot;name&quot;:&quot;Max&quot;,&quot;photoUrls&quot;:[],&quot;tags&quot;:[],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:7956047106317249216,&quot;category&quot;:{&quot;id&quot;:974,&quot;name&quot;:&quot;dog&quot;},&quot;name&quot;:&quot;qdfkpblby&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/photos/7956047106317249216&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:6145363,&quot;name&quot;:&quot;Max&quot;,&quot;photoUrls&quot;:[],&quot;tags&quot;:[],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1757871724,&quot;name&quot;:&quot;TestPet-CPP&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/photo.png&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:346438498,&quot;category&quot;:{&quot;id&quot;:773,&quot;name&quot;:&quot;dog&quot;},&quot;name&quot;:&quot;rfghhw&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/photos/346438498&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1757872155446,&quot;category&quot;:{&quot;id&quot;:1234567,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;Max&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:1234567,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1757872189575,&quot;category&quot;:{&quot;id&quot;:1234567,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;Max&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:1234567,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:6081,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;Category&quot;},&quot;name&quot;:&quot;Updated_6081&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/photo1&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;Tag&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:56331470,&quot;category&quot;:{&quot;id&quot;:28262311,&quot;name&quot;:&quot;nostrud proident&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;sunt dolor veniam aliqua&quot;,&quot;nulla anim ex&quot;],&quot;tags&quot;:[{&quot;id&quot;:21515670,&quot;name&quot;:&quot;voluptate in elit ani&quot;},{&quot;id&quot;:-36858804,&quot;name&quot;:&quot;proident non deserunt&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:664715579,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;Cats&quot;},&quot;name&quot;:&quot;New&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:968929389,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;Cats&quot;},&quot;name&quot;:&quot;New&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:670327980,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;Cats&quot;},&quot;name&quot;:&quot;New&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:2023,&quot;category&quot;:{&quot;id&quot;:2,&quot;name&quot;:&quot;Canines&quot;},&quot;name&quot;:&quot;Test66&quot;,&quot;photoUrls&quot;:[&quot;not_a_url&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:17,&quot;name&quot;:&quot;Special_char_owner_!@#$^&amp;()`.testing&quot;,&quot;photoUrls&quot;:[&quot;https://petstore3.swagger.io/resources/photos/623389095.jpg&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:676879,&quot;name&quot;:&quot;Special_char_owner_!@#$^&amp;()`.testing&quot;,&quot;photoUrls&quot;:[&quot;https://petstore3.swagger.io/resources/photos/623389095.jpg&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:111,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Pugs&quot;},&quot;name&quot;:&quot;Pug Leonid&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;Puggy Valera &quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1325490325,&quot;name&quot;:&quot;Rex_Updated&quot;,&quot;photoUrls&quot;:[],&quot;tags&quot;:[],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1234567890,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;NewName&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:101,&quot;category&quot;:{&quot;id&quot;:10,&quot;name&quot;:&quot;charlie2&quot;},&quot;name&quot;:&quot;Doggie Actualizado&quot;,&quot;photoUrls&quot;:[&quot;https://misfotos.com/doggie.png&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;vacunado&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:191505,&quot;category&quot;:{&quot;id&quot;:438358,&quot;name&quot;:&quot;Зоя&quot;},&quot;name&quot;:&quot;hamster&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:777123,&quot;category&quot;:{&quot;id&quot;:777123,&quot;name&quot;:&quot;fish&quot;},&quot;name&quot;:&quot;Nemo&quot;,&quot;photoUrls&quot;:[&quot;https://img1.fonwall.ru/o/hl/sea-photography-flower-underwater.jpeg?route=mid&amp;amp;h=750&quot;,&quot;https://img1.fonwall.ru/o/hl/sea-photography-flower-underwater.jpeg?route=mid&amp;amp;h=750&quot;],&quot;tags&quot;:[{&quot;id&quot;:123,&quot;name&quot;:&quot;priff&quot;},{&quot;id&quot;:123,&quot;name&quot;:&quot;ribka&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:9223372036854773917,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;boss2.0&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:71551342,&quot;category&quot;:{&quot;id&quot;:14955550,&quot;name&quot;:&quot;ipsum do amet&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;dolore dolor&quot;,&quot;pariatur elit ea&quot;],&quot;tags&quot;:[{&quot;id&quot;:-17398234,&quot;name&quot;:&quot;non ex&quot;},{&quot;id&quot;:-32010324,&quot;name&quot;:&quot;ut culpa aliqua est non&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:23327731,&quot;category&quot;:{&quot;id&quot;:-92357313,&quot;name&quot;:&quot;reprehenderit ut nostrud ut&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;Lorem laboris&quot;,&quot;laboris&quot;],&quot;tags&quot;:[{&quot;id&quot;:89386643,&quot;name&quot;:&quot;elit esse cillum&quot;},{&quot;id&quot;:-23396785,&quot;name&quot;:&quot;minim consectetur&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1777,&quot;category&quot;:{&quot;id&quot;:1777,&quot;name&quot;:&quot;fish&quot;},&quot;name&quot;:&quot;Nemo&quot;,&quot;photoUrls&quot;:[&quot;https://www.google.com/imgres?q=fish&amp;imgurl=https%3A%2F%2Fwww.aqueon.com%2F-%2Fmedia%2Fproject%2Foneweb%2Faqueon%2Fus%2Fblog%2Fways-to-know-your-fish-are-happy%2Ffish-are-happy-and-healthy-1.png&amp;imgrefurl=https%3A%2F%2Fwww.aqueon.com%2Farticles%2Fways-to-know-your-fish-are-happy&amp;docid=aYbA3xYlpw0ZcM&amp;tbnid=uVomlcyWEqpA8M&amp;vet=12ahUKEwibjaX_oeOIAxU0BdsEHe31LPwQM3oECB8QAA..i&amp;w=1000&amp;h=650&amp;hcb=2&amp;ved=2ahUKEwibjaX_oeOIAxU0BdsEHe31LPwQM3oECB8QAA&quot;,&quot;&lt;string&gt;&quot;],&quot;tags&quot;:[{&quot;id&quot;:1777,&quot;name&quot;:&quot;Fish&quot;},{&quot;id&quot;:1777,&quot;name&quot;:&quot;Fish&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:38480305,&quot;category&quot;:{&quot;id&quot;:-59161747,&quot;name&quot;:&quot;Duis voluptate consequat&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;ex enim &quot;,&quot;nisi est&quot;],&quot;tags&quot;:[{&quot;id&quot;:49121599,&quot;name&quot;:&quot;non anim exercitation&quot;},{&quot;id&quot;:2672065,&quot;name&quot;:&quot;sint&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:70119872,&quot;category&quot;:{&quot;id&quot;:93142102,&quot;name&quot;:&quot;Змея&quot;},&quot;name&quot;:&quot;Анаконда&quot;,&quot;photoUrls&quot;:[&quot;mollit&quot;,&quot;https://irecommend.ru/sites/default/files/product-images/98227/3lJyZagay9aoxv06o6TJCQ.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:-19037377,&quot;name&quot;:&quot;deserunt veniam nulla reprehenderit&quot;},{&quot;id&quot;:51503358,&quot;name&quot;:&quot;ullamco aliqua Excepteur cillum&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:24364310,&quot;category&quot;:{&quot;id&quot;:-12307344,&quot;name&quot;:&quot;kitten бфрмалейка&quot;},&quot;name&quot;:&quot;kitten1&quot;,&quot;photoUrls&quot;:[&quot;dolor in&quot;,&quot;occaecat dolore consectetur adipisicing&quot;],&quot;tags&quot;:[{&quot;id&quot;:-22679152,&quot;name&quot;:&quot;non ex&quot;},{&quot;id&quot;:33284191,&quot;name&quot;:&quot;sed pariatur in&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:82188160,&quot;category&quot;:{&quot;id&quot;:81640824,&quot;name&quot;:&quot;nisi exercitation reprehenderit dolore&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;proident eu enim&quot;,&quot;mollit cillum nisi&quot;],&quot;tags&quot;:[{&quot;id&quot;:6316356,&quot;name&quot;:&quot;laborum magn&quot;},{&quot;id&quot;:73149614,&quot;name&quot;:&quot;veniam fugiat amet si&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1711982,&quot;category&quot;:{&quot;id&quot;:52551857,&quot;name&quot;:&quot;non Lorem tempor&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;veniam&quot;,&quot;reprehenderit commodo proident occaecat&quot;],&quot;tags&quot;:[{&quot;id&quot;:-12689894,&quot;name&quot;:&quot;veniam mollit&quot;},{&quot;id&quot;:-27514803,&quot;name&quot;:&quot;sed ullamco ut&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:9223372036854774920,&quot;category&quot;:{&quot;id&quot;:26052472,&quot;name&quot;:&quot;quis labore id do&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;deserunt nostrud n&quot;,&quot;&quot;],&quot;tags&quot;:[{&quot;id&quot;:9084274,&quot;name&quot;:&quot;Ut ea cupidatat consectetur laboris&quot;},{&quot;id&quot;:84195358,&quot;name&quot;:&quot;sint aliquip consectetur&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:9223372036854774924,&quot;category&quot;:{&quot;id&quot;:56425022,&quot;name&quot;:&quot;dol&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;irure Duis aliquip&quot;,&quot;velit fugiat in&quot;],&quot;tags&quot;:[{&quot;id&quot;:8252994,&quot;name&quot;:&quot;dolor amet&quot;},{&quot;id&quot;:45116039,&quot;name&quot;:&quot;in ea quis&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:9223372036854774925,&quot;category&quot;:{&quot;id&quot;:-89557905,&quot;name&quot;:&quot;elit ipsum incididunt ullamco&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;consect&quot;,&quot;ex&quot;],&quot;tags&quot;:[{&quot;id&quot;:-9997927,&quot;name&quot;:&quot;id aute dolor ea&quot;},{&quot;id&quot;:50814242,&quot;name&quot;:&quot;cillum voluptate nostrud consequat&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:9223372036854774927,&quot;category&quot;:{&quot;id&quot;:-27322073,&quot;name&quot;:&quot;in nulla&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;laborum nostrud nisi&quot;,&quot;velit&quot;],&quot;tags&quot;:[{&quot;id&quot;:54262278,&quot;name&quot;:&quot;nostrud in elit do Excepteur&quot;},{&quot;id&quot;:78506224,&quot;name&quot;:&quot;pariatur eu ex&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:24572652,&quot;category&quot;:{&quot;id&quot;:70314021,&quot;name&quot;:&quot;adipisicing dolore&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;magna dolor Ut in&quot;,&quot;in eiusm&quot;],&quot;tags&quot;:[{&quot;id&quot;:85643839,&quot;name&quot;:&quot;aliquip sit dolor&quot;},{&quot;id&quot;:-89364963,&quot;name&quot;:&quot;elit id reprehenderit eiusmod exercitation&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:9223372036854774932,&quot;category&quot;:{&quot;id&quot;:-10633856,&quot;name&quot;:&quot;proident qui ea deserunt&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;aute in velit Ut pariatur&quot;,&quot;id voluptate&quot;],&quot;tags&quot;:[{&quot;id&quot;:-22769704,&quot;name&quot;:&quot;consectetur adipisicing&quot;},{&quot;id&quot;:55433864,&quot;name&quot;:&quot;veniam est commodo&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:9223372036854774937,&quot;category&quot;:{&quot;id&quot;:14693763,&quot;name&quot;:&quot;dolore laborum cillum&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;labore aliquip&quot;,&quot;fugiat dolor commodo mollit id&quot;],&quot;tags&quot;:[{&quot;id&quot;:-57621507,&quot;name&quot;:&quot;commodo cupidatat&quot;},{&quot;id&quot;:66737527,&quot;name&quot;:&quot;cupidatat proident ut&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:23437566,&quot;category&quot;:{&quot;id&quot;:-46393995,&quot;name&quot;:&quot;ex ea culpa&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;ut ex veniam dolor&quot;,&quot;in aliquip&quot;],&quot;tags&quot;:[{&quot;id&quot;:91638732,&quot;name&quot;:&quot;Excepteur ea commodo esse&quot;},{&quot;id&quot;:42980181,&quot;name&quot;:&quot;nulla officia ut labore&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:9223372036854774945,&quot;category&quot;:{&quot;id&quot;:62046841,&quot;name&quot;:&quot;incididunt enim exercitation&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;aliquip cillum&quot;,&quot;aliquip in in do&quot;],&quot;tags&quot;:[{&quot;id&quot;:69730294,&quot;name&quot;:&quot;quis consequat ullamco ut&quot;},{&quot;id&quot;:-82496586,&quot;name&quot;:&quot;ex minim commodo aliqua veniam&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:38541659,&quot;category&quot;:{&quot;id&quot;:-70999792,&quot;name&quot;:&quot;dolore aliqua irure&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;cupidatat quis&quot;,&quot;ipsum deserunt&quot;],&quot;tags&quot;:[{&quot;id&quot;:96985450,&quot;name&quot;:&quot;proident adipisicing officia&quot;},{&quot;id&quot;:-17203769,&quot;name&quot;:&quot;sunt reprehenderit&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:9,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;cats&quot;},&quot;name&quot;:&quot;King Kong&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:49199499,&quot;category&quot;:{&quot;id&quot;:20305865,&quot;name&quot;:&quot;et cupidatat nisi incididunt&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;sunt esse consequat&quot;,&quot;Ut nostrud anim adipisicing&quot;],&quot;tags&quot;:[{&quot;id&quot;:33995919,&quot;name&quot;:&quot;tempor non nostrud&quot;},{&quot;id&quot;:-54707686,&quot;name&quot;:&quot;qui pariatur&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:62348053,&quot;category&quot;:{&quot;id&quot;:38125450,&quot;name&quot;:&quot;in ipsum eu exercitation&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;reprehenderit velit enim voluptate&quot;,&quot;sit aliquip&quot;],&quot;tags&quot;:[{&quot;id&quot;:-75638954,&quot;name&quot;:&quot;Ut&quot;},{&quot;id&quot;:-32534044,&quot;name&quot;:&quot;occaecat qui commodo&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1001,&quot;name&quot;:&quot;FluffyUpdated&quot;,&quot;photoUrls&quot;:[],&quot;tags&quot;:[],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:12345,&quot;name&quot;:&quot;tarzan&quot;,&quot;photoUrls&quot;:[],&quot;tags&quot;:[],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:10000,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;PetUpd10000&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:5090731661126513098,&quot;category&quot;:{&quot;id&quot;:4003960979296801862,&quot;name&quot;:&quot;fox&quot;},&quot;name&quot;:&quot;Tiger&quot;,&quot;photoUrls&quot;:[&quot;https://picsum.photos/seed/6453247857793041217/600/400&quot;],&quot;tags&quot;:[{&quot;id&quot;:5349527466559423039,&quot;name&quot;:&quot;azure&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:302994752,&quot;name&quot;:&quot;Rex_Updated_456&quot;,&quot;photoUrls&quot;:[&quot;https://example.com/rex.jpg&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:9223372036854287,&quot;category&quot;:{&quot;id&quot;:-13727801,&quot;name&quot;:&quot;fishs&quot;},&quot;name&quot;:&quot;nemar&quot;,&quot;photoUrls&quot;:[&quot;est irure ad&quot;,&quot;https://icdn.lenta.ru/images/2017/09/01/17/20170901174458404/detail_c21173bdfcc5e339555293d696128592.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:-3288814,&quot;name&quot;:&quot;in officia sit sunt&quot;},{&quot;id&quot;:-53146769,&quot;name&quot;:&quot;voluptate cillum&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:14206,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;Max&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:80454,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;Max&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:420078,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;Max&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1837,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;Max&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1839,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;Max&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1831,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;Max&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1832,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;Max&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1836,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;Max&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1838,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;Max&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;sold&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.69">
+      <div class="step-ref passed">69</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.70">
+      <div class="step-ref passed">70</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response[*].status contains &#39;sold&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.71">
+      <div class="step-ref passed">71</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &quot;Mascota consultada por status:&quot;, response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">40</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.71">18:52:06.765 [print] Mascota consultada por status: [
+  {
+    &quot;id&quot;: 7777,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1234567,
+      &quot;name&quot;: &quot;string&quot;
+    },
+    &quot;name&quot;: &quot;jim&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;string&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1234567,
+        &quot;name&quot;: &quot;string&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 98765432,
+    &quot;category&quot;: {
+      &quot;id&quot;: 0,
+      &quot;name&quot;: &quot;string&quot;
+    },
+    &quot;name&quot;: &quot;Efra&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;string&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 0,
+        &quot;name&quot;: &quot;string&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1655354144,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;LlsgPAg4&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 462462202,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;RGWhENda&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1755688644,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;tovBmajh&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 81632057,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;23fgHnJG&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1422828219,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;b3ywR0IQ&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 207033267,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;Nlc8dt1n&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1068738928,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;xUSCQzJp&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 967659614,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;316GgHbG&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 692573057,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;OMuBcwpS&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 2031889321,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;WhXyixem&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 461864333,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;agvqLpPI&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 378643708,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;OgBjrpZh&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 98863568,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;wlGmo6We&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 257252659,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;MreHmbgz&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 786890446,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;CatXdDQI&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 258247041,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;vMBL4vXP&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 2139196856,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;xUsCDccR&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1110950441,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;1bLgJ3mN&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 180655126,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;6pA29lIL&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1290588043,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;hPSzjQx1&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 573838235,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;x7OaCB7U&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 199521599,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;L8wAe7vI&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 996473691,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;pz3xZHqW&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 916336591,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;2qEki81f&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 2029653287,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;uIBF1Eno&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1664101672,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;BZAkc0cY&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 460917259,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;tJEjvGWJ&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1090535125,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;aVk6EdfK&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1733286741,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;coh3FnVZ&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 58574145,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;xvlzllKR&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 749750508,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;n5tUu2ye&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1932914696,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;nJK7JOnk&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 451217170,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;Bz6RLzYP&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 686421872,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;6gjlIcWT&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1470905336,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;sRdGijHm&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1375076293,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;IkDZGleQ&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 458480911,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;xytas55T&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1696258829,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;9CUTKnBo&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1642821359,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;p0wDuB0A&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1806602361,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;oY2CVlWc&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1319035473,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;oubgki3h&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1859971646,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;VZGQJbVx&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1834249539,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;2xWhxmpA&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 182229744,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;k2tMmQ1U&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1688854245,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;hGZ6XjVz&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 407960427,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;1vubDvb9&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1929798993,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;vSOmYOtb&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1562990756,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;QZCKJrGs&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 575740669,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;n2q7wdf7&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1366754438,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;hzqsiHHo&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1317753204,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;BCAFgEEo&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 2107639067,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;u2Au1vAJ&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1729469705,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;YEw9JYtS&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 2079101853,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;ZQpQcjxL&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1705356575,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;m7D41aoo&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1090730758,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;0SS2MUnP&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1827089105,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;hqZrGrPi&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1401351466,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;6d70swKk&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1709610978,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;rNyIOQsg&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 495196473,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;lqcH67YT&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 580346374,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dog&quot;
+    },
+    &quot;name&quot;: &quot;KBkxh3Bq&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/pet.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 2001,
+    &quot;category&quot;: {
+      &quot;id&quot;: 0,
+      &quot;name&quot;: &quot;Dogs&quot;
+    },
+    &quot;name&quot;: &quot;DogUpdated&quot;,
+    &quot;photoUrls&quot;: [
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 8386366,
+    &quot;category&quot;: {
+      &quot;id&quot;: 0,
+      &quot;name&quot;: &quot;string&quot;
+    },
+    &quot;name&quot;: &quot;DeniseMooney&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;string&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 0,
+        &quot;name&quot;: &quot;string&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 13,
+    &quot;category&quot;: {
+      &quot;id&quot;: 0,
+      &quot;name&quot;: &quot;cats&quot;
+    },
+    &quot;photoUrls&quot;: [
+      &quot;string&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 0,
+        &quot;name&quot;: &quot;string&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1757870854,
+    &quot;category&quot;: {
+      &quot;id&quot;: 0,
+      &quot;name&quot;: &quot;Dogs&quot;
+    },
+    &quot;name&quot;: &quot;Buddy&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;https://example.com/photo.png&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 0,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1757870891,
+    &quot;category&quot;: {
+      &quot;id&quot;: 0,
+      &quot;name&quot;: &quot;Dogs&quot;
+    },
+    &quot;name&quot;: &quot;Buddy&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;https://example.com/photo.png&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 0,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 57357,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dogs&quot;
+    },
+    &quot;name&quot;: &quot;Efra&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;https://example.com/photo1&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 758056,
+    &quot;category&quot;: {
+      &quot;id&quot;: 637,
+      &quot;name&quot;: &quot;string&quot;
+    },
+    &quot;photoUrls&quot;: [
+      &quot;string&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 30,
+        &quot;name&quot;: &quot;string&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 413242,
+    &quot;category&quot;: {
+      &quot;id&quot;: 390,
+      &quot;name&quot;: &quot;string&quot;
+    },
+    &quot;name&quot;: &quot;REiNgfpo&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;string&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 40,
+        &quot;name&quot;: &quot;string&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 75602,
+    &quot;category&quot;: {
+      &quot;id&quot;: 356445544,
+      &quot;name&quot;: &quot;mallard&quot;
+    },
+    &quot;name&quot;: &quot;Jasper&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;https://picsum.photos/seed/5398682/600/400&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 8670,
+        &quot;name&quot;: &quot;maroon&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 50293,
+    &quot;category&quot;: {
+      &quot;id&quot;: 588595292,
+      &quot;name&quot;: &quot;rhinoceros&quot;
+    },
+    &quot;name&quot;: &quot;Tuna&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;https://picsum.photos/seed/31/600/400&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 2750945,
+        &quot;name&quot;: &quot;cyan&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 5843592,
+    &quot;name&quot;: &quot;Max&quot;,
+    &quot;photoUrls&quot;: [
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 7956047106317249216,
+    &quot;category&quot;: {
+      &quot;id&quot;: 974,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;qdfkpblby&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/photos/7956047106317249216&quot;
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 6145363,
+    &quot;name&quot;: &quot;Max&quot;,
+    &quot;photoUrls&quot;: [
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1757871724,
+    &quot;name&quot;: &quot;TestPet-CPP&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/photo.png&quot;
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 346438498,
+    &quot;category&quot;: {
+      &quot;id&quot;: 773,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;rfghhw&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/photos/346438498&quot;
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1757872155446,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1234567,
+      &quot;name&quot;: &quot;string&quot;
+    },
+    &quot;name&quot;: &quot;Max&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;string&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1234567,
+        &quot;name&quot;: &quot;string&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1757872189575,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1234567,
+      &quot;name&quot;: &quot;string&quot;
+    },
+    &quot;name&quot;: &quot;Max&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;string&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1234567,
+        &quot;name&quot;: &quot;string&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 6081,
+    &quot;category&quot;: {
+      &quot;id&quot;: 0,
+      &quot;name&quot;: &quot;Category&quot;
+    },
+    &quot;name&quot;: &quot;Updated_6081&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/photo1&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 0,
+        &quot;name&quot;: &quot;Tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 56331470,
+    &quot;category&quot;: {
+      &quot;id&quot;: 28262311,
+      &quot;name&quot;: &quot;nostrud proident&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;sunt dolor veniam aliqua&quot;,
+      &quot;nulla anim ex&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 21515670,
+        &quot;name&quot;: &quot;voluptate in elit ani&quot;
+      },
+      {
+        &quot;id&quot;: -36858804,
+        &quot;name&quot;: &quot;proident non deserunt&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 664715579,
+    &quot;category&quot;: {
+      &quot;id&quot;: 0,
+      &quot;name&quot;: &quot;Cats&quot;
+    },
+    &quot;name&quot;: &quot;New&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;string&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 0,
+        &quot;name&quot;: &quot;string&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 968929389,
+    &quot;category&quot;: {
+      &quot;id&quot;: 0,
+      &quot;name&quot;: &quot;Cats&quot;
+    },
+    &quot;name&quot;: &quot;New&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;string&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 0,
+        &quot;name&quot;: &quot;string&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 670327980,
+    &quot;category&quot;: {
+      &quot;id&quot;: 0,
+      &quot;name&quot;: &quot;Cats&quot;
+    },
+    &quot;name&quot;: &quot;New&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;string&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 0,
+        &quot;name&quot;: &quot;string&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 2023,
+    &quot;category&quot;: {
+      &quot;id&quot;: 2,
+      &quot;name&quot;: &quot;Canines&quot;
+    },
+    &quot;name&quot;: &quot;Test66&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;not_a_url&quot;
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 17,
+    &quot;name&quot;: &quot;Special_char_owner_!@#$^&amp;()`.testing&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;https://petstore3.swagger.io/resources/photos/623389095.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 676879,
+    &quot;name&quot;: &quot;Special_char_owner_!@#$^&amp;()`.testing&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;https://petstore3.swagger.io/resources/photos/623389095.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 111,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Pugs&quot;
+    },
+    &quot;name&quot;: &quot;Pug Leonid&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;string&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 2,
+        &quot;name&quot;: &quot;Puggy Valera &quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1325490325,
+    &quot;name&quot;: &quot;Rex_Updated&quot;,
+    &quot;photoUrls&quot;: [
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1234567890,
+    &quot;category&quot;: {
+      &quot;id&quot;: 0,
+      &quot;name&quot;: &quot;string&quot;
+    },
+    &quot;name&quot;: &quot;NewName&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;string&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 0,
+        &quot;name&quot;: &quot;string&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 101,
+    &quot;category&quot;: {
+      &quot;id&quot;: 10,
+      &quot;name&quot;: &quot;charlie2&quot;
+    },
+    &quot;name&quot;: &quot;Doggie Actualizado&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;https://misfotos.com/doggie.png&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;vacunado&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 191505,
+    &quot;category&quot;: {
+      &quot;id&quot;: 438358,
+      &quot;name&quot;: &quot;Зоя&quot;
+    },
+    &quot;name&quot;: &quot;hamster&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;string&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 0,
+        &quot;name&quot;: &quot;string&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 777123,
+    &quot;category&quot;: {
+      &quot;id&quot;: 777123,
+      &quot;name&quot;: &quot;fish&quot;
+    },
+    &quot;name&quot;: &quot;Nemo&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;https://img1.fonwall.ru/o/hl/sea-photography-flower-underwater.jpeg?route=mid&amp;amp;h=750&quot;,
+      &quot;https://img1.fonwall.ru/o/hl/sea-photography-flower-underwater.jpeg?route=mid&amp;amp;h=750&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 123,
+        &quot;name&quot;: &quot;priff&quot;
+      },
+      {
+        &quot;id&quot;: 123,
+        &quot;name&quot;: &quot;ribka&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 9223372036854773917,
+    &quot;category&quot;: {
+      &quot;id&quot;: 0,
+      &quot;name&quot;: &quot;string&quot;
+    },
+    &quot;name&quot;: &quot;boss2.0&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;string&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 0,
+        &quot;name&quot;: &quot;string&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 71551342,
+    &quot;category&quot;: {
+      &quot;id&quot;: 14955550,
+      &quot;name&quot;: &quot;ipsum do amet&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;dolore dolor&quot;,
+      &quot;pariatur elit ea&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: -17398234,
+        &quot;name&quot;: &quot;non ex&quot;
+      },
+      {
+        &quot;id&quot;: -32010324,
+        &quot;name&quot;: &quot;ut culpa aliqua est non&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 23327731,
+    &quot;category&quot;: {
+      &quot;id&quot;: -92357313,
+      &quot;name&quot;: &quot;reprehenderit ut nostrud ut&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;Lorem laboris&quot;,
+      &quot;laboris&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 89386643,
+        &quot;name&quot;: &quot;elit esse cillum&quot;
+      },
+      {
+        &quot;id&quot;: -23396785,
+        &quot;name&quot;: &quot;minim consectetur&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1777,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1777,
+      &quot;name&quot;: &quot;fish&quot;
+    },
+    &quot;name&quot;: &quot;Nemo&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;https://www.google.com/imgres?q=fish&amp;imgurl=https%3A%2F%2Fwww.aqueon.com%2F-%2Fmedia%2Fproject%2Foneweb%2Faqueon%2Fus%2Fblog%2Fways-to-know-your-fish-are-happy%2Ffish-are-happy-and-healthy-1.png&amp;imgrefurl=https%3A%2F%2Fwww.aqueon.com%2Farticles%2Fways-to-know-your-fish-are-happy&amp;docid=aYbA3xYlpw0ZcM&amp;tbnid=uVomlcyWEqpA8M&amp;vet=12ahUKEwibjaX_oeOIAxU0BdsEHe31LPwQM3oECB8QAA..i&amp;w=1000&amp;h=650&amp;hcb=2&amp;ved=2ahUKEwibjaX_oeOIAxU0BdsEHe31LPwQM3oECB8QAA&quot;,
+      &quot;&lt;string&gt;&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1777,
+        &quot;name&quot;: &quot;Fish&quot;
+      },
+      {
+        &quot;id&quot;: 1777,
+        &quot;name&quot;: &quot;Fish&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 38480305,
+    &quot;category&quot;: {
+      &quot;id&quot;: -59161747,
+      &quot;name&quot;: &quot;Duis voluptate consequat&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;ex enim &quot;,
+      &quot;nisi est&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 49121599,
+        &quot;name&quot;: &quot;non anim exercitation&quot;
+      },
+      {
+        &quot;id&quot;: 2672065,
+        &quot;name&quot;: &quot;sint&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 70119872,
+    &quot;category&quot;: {
+      &quot;id&quot;: 93142102,
+      &quot;name&quot;: &quot;Змея&quot;
+    },
+    &quot;name&quot;: &quot;Анаконда&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;mollit&quot;,
+      &quot;https://irecommend.ru/sites/default/files/product-images/98227/3lJyZagay9aoxv06o6TJCQ.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: -19037377,
+        &quot;name&quot;: &quot;deserunt veniam nulla reprehenderit&quot;
+      },
+      {
+        &quot;id&quot;: 51503358,
+        &quot;name&quot;: &quot;ullamco aliqua Excepteur cillum&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 24364310,
+    &quot;category&quot;: {
+      &quot;id&quot;: -12307344,
+      &quot;name&quot;: &quot;kitten бфрмалейка&quot;
+    },
+    &quot;name&quot;: &quot;kitten1&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;dolor in&quot;,
+      &quot;occaecat dolore consectetur adipisicing&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: -22679152,
+        &quot;name&quot;: &quot;non ex&quot;
+      },
+      {
+        &quot;id&quot;: 33284191,
+        &quot;name&quot;: &quot;sed pariatur in&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 82188160,
+    &quot;category&quot;: {
+      &quot;id&quot;: 81640824,
+      &quot;name&quot;: &quot;nisi exercitation reprehenderit dolore&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;proident eu enim&quot;,
+      &quot;mollit cillum nisi&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 6316356,
+        &quot;name&quot;: &quot;laborum magn&quot;
+      },
+      {
+        &quot;id&quot;: 73149614,
+        &quot;name&quot;: &quot;veniam fugiat amet si&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1711982,
+    &quot;category&quot;: {
+      &quot;id&quot;: 52551857,
+      &quot;name&quot;: &quot;non Lorem tempor&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;veniam&quot;,
+      &quot;reprehenderit commodo proident occaecat&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: -12689894,
+        &quot;name&quot;: &quot;veniam mollit&quot;
+      },
+      {
+        &quot;id&quot;: -27514803,
+        &quot;name&quot;: &quot;sed ullamco ut&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 9223372036854774920,
+    &quot;category&quot;: {
+      &quot;id&quot;: 26052472,
+      &quot;name&quot;: &quot;quis labore id do&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;deserunt nostrud n&quot;,
+      &quot;&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 9084274,
+        &quot;name&quot;: &quot;Ut ea cupidatat consectetur laboris&quot;
+      },
+      {
+        &quot;id&quot;: 84195358,
+        &quot;name&quot;: &quot;sint aliquip consectetur&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 9223372036854774924,
+    &quot;category&quot;: {
+      &quot;id&quot;: 56425022,
+      &quot;name&quot;: &quot;dol&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;irure Duis aliquip&quot;,
+      &quot;velit fugiat in&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 8252994,
+        &quot;name&quot;: &quot;dolor amet&quot;
+      },
+      {
+        &quot;id&quot;: 45116039,
+        &quot;name&quot;: &quot;in ea quis&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 9223372036854774925,
+    &quot;category&quot;: {
+      &quot;id&quot;: -89557905,
+      &quot;name&quot;: &quot;elit ipsum incididunt ullamco&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;consect&quot;,
+      &quot;ex&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: -9997927,
+        &quot;name&quot;: &quot;id aute dolor ea&quot;
+      },
+      {
+        &quot;id&quot;: 50814242,
+        &quot;name&quot;: &quot;cillum voluptate nostrud consequat&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 9223372036854774927,
+    &quot;category&quot;: {
+      &quot;id&quot;: -27322073,
+      &quot;name&quot;: &quot;in nulla&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;laborum nostrud nisi&quot;,
+      &quot;velit&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 54262278,
+        &quot;name&quot;: &quot;nostrud in elit do Excepteur&quot;
+      },
+      {
+        &quot;id&quot;: 78506224,
+        &quot;name&quot;: &quot;pariatur eu ex&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 24572652,
+    &quot;category&quot;: {
+      &quot;id&quot;: 70314021,
+      &quot;name&quot;: &quot;adipisicing dolore&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;magna dolor Ut in&quot;,
+      &quot;in eiusm&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 85643839,
+        &quot;name&quot;: &quot;aliquip sit dolor&quot;
+      },
+      {
+        &quot;id&quot;: -89364963,
+        &quot;name&quot;: &quot;elit id reprehenderit eiusmod exercitation&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 9223372036854774932,
+    &quot;category&quot;: {
+      &quot;id&quot;: -10633856,
+      &quot;name&quot;: &quot;proident qui ea deserunt&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;aute in velit Ut pariatur&quot;,
+      &quot;id voluptate&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: -22769704,
+        &quot;name&quot;: &quot;consectetur adipisicing&quot;
+      },
+      {
+        &quot;id&quot;: 55433864,
+        &quot;name&quot;: &quot;veniam est commodo&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 9223372036854774937,
+    &quot;category&quot;: {
+      &quot;id&quot;: 14693763,
+      &quot;name&quot;: &quot;dolore laborum cillum&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;labore aliquip&quot;,
+      &quot;fugiat dolor commodo mollit id&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: -57621507,
+        &quot;name&quot;: &quot;commodo cupidatat&quot;
+      },
+      {
+        &quot;id&quot;: 66737527,
+        &quot;name&quot;: &quot;cupidatat proident ut&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 23437566,
+    &quot;category&quot;: {
+      &quot;id&quot;: -46393995,
+      &quot;name&quot;: &quot;ex ea culpa&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;ut ex veniam dolor&quot;,
+      &quot;in aliquip&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 91638732,
+        &quot;name&quot;: &quot;Excepteur ea commodo esse&quot;
+      },
+      {
+        &quot;id&quot;: 42980181,
+        &quot;name&quot;: &quot;nulla officia ut labore&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 9223372036854774945,
+    &quot;category&quot;: {
+      &quot;id&quot;: 62046841,
+      &quot;name&quot;: &quot;incididunt enim exercitation&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;aliquip cillum&quot;,
+      &quot;aliquip in in do&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 69730294,
+        &quot;name&quot;: &quot;quis consequat ullamco ut&quot;
+      },
+      {
+        &quot;id&quot;: -82496586,
+        &quot;name&quot;: &quot;ex minim commodo aliqua veniam&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 38541659,
+    &quot;category&quot;: {
+      &quot;id&quot;: -70999792,
+      &quot;name&quot;: &quot;dolore aliqua irure&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;cupidatat quis&quot;,
+      &quot;ipsum deserunt&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 96985450,
+        &quot;name&quot;: &quot;proident adipisicing officia&quot;
+      },
+      {
+        &quot;id&quot;: -17203769,
+        &quot;name&quot;: &quot;sunt reprehenderit&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 9,
+    &quot;category&quot;: {
+      &quot;id&quot;: 0,
+      &quot;name&quot;: &quot;cats&quot;
+    },
+    &quot;name&quot;: &quot;King Kong&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;string&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 0,
+        &quot;name&quot;: &quot;string&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 49199499,
+    &quot;category&quot;: {
+      &quot;id&quot;: 20305865,
+      &quot;name&quot;: &quot;et cupidatat nisi incididunt&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;sunt esse consequat&quot;,
+      &quot;Ut nostrud anim adipisicing&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 33995919,
+        &quot;name&quot;: &quot;tempor non nostrud&quot;
+      },
+      {
+        &quot;id&quot;: -54707686,
+        &quot;name&quot;: &quot;qui pariatur&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 62348053,
+    &quot;category&quot;: {
+      &quot;id&quot;: 38125450,
+      &quot;name&quot;: &quot;in ipsum eu exercitation&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;reprehenderit velit enim voluptate&quot;,
+      &quot;sit aliquip&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: -75638954,
+        &quot;name&quot;: &quot;Ut&quot;
+      },
+      {
+        &quot;id&quot;: -32534044,
+        &quot;name&quot;: &quot;occaecat qui commodo&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1001,
+    &quot;name&quot;: &quot;FluffyUpdated&quot;,
+    &quot;photoUrls&quot;: [
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 12345,
+    &quot;name&quot;: &quot;tarzan&quot;,
+    &quot;photoUrls&quot;: [
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 10000,
+    &quot;category&quot;: {
+      &quot;id&quot;: 0,
+      &quot;name&quot;: &quot;string&quot;
+    },
+    &quot;name&quot;: &quot;PetUpd10000&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;string&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 0,
+        &quot;name&quot;: &quot;string&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 5090731661126513098,
+    &quot;category&quot;: {
+      &quot;id&quot;: 4003960979296801862,
+      &quot;name&quot;: &quot;fox&quot;
+    },
+    &quot;name&quot;: &quot;Tiger&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;https://picsum.photos/seed/6453247857793041217/600/400&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 5349527466559423039,
+        &quot;name&quot;: &quot;azure&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 302994752,
+    &quot;name&quot;: &quot;Rex_Updated_456&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;https://example.com/rex.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 9223372036854287,
+    &quot;category&quot;: {
+      &quot;id&quot;: -13727801,
+      &quot;name&quot;: &quot;fishs&quot;
+    },
+    &quot;name&quot;: &quot;nemar&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;est irure ad&quot;,
+      &quot;https://icdn.lenta.ru/images/2017/09/01/17/20170901174458404/detail_c21173bdfcc5e339555293d696128592.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: -3288814,
+        &quot;name&quot;: &quot;in officia sit sunt&quot;
+      },
+      {
+        &quot;id&quot;: -53146769,
+        &quot;name&quot;: &quot;voluptate cillum&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 14206,
+    &quot;category&quot;: {
+      &quot;id&quot;: 0,
+      &quot;name&quot;: &quot;string&quot;
+    },
+    &quot;name&quot;: &quot;Max&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;string&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 0,
+        &quot;name&quot;: &quot;string&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 80454,
+    &quot;category&quot;: {
+      &quot;id&quot;: 0,
+      &quot;name&quot;: &quot;string&quot;
+    },
+    &quot;name&quot;: &quot;Max&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;string&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 0,
+        &quot;name&quot;: &quot;string&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 420078,
+    &quot;category&quot;: {
+      &quot;id&quot;: 0,
+      &quot;name&quot;: &quot;string&quot;
+    },
+    &quot;name&quot;: &quot;Max&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;string&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 0,
+        &quot;name&quot;: &quot;string&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1837,
+    &quot;category&quot;: {
+      &quot;id&quot;: 0,
+      &quot;name&quot;: &quot;string&quot;
+    },
+    &quot;name&quot;: &quot;Max&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;string&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 0,
+        &quot;name&quot;: &quot;string&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1839,
+    &quot;category&quot;: {
+      &quot;id&quot;: 0,
+      &quot;name&quot;: &quot;string&quot;
+    },
+    &quot;name&quot;: &quot;Max&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;string&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 0,
+        &quot;name&quot;: &quot;string&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1831,
+    &quot;category&quot;: {
+      &quot;id&quot;: 0,
+      &quot;name&quot;: &quot;string&quot;
+    },
+    &quot;name&quot;: &quot;Max&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;string&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 0,
+        &quot;name&quot;: &quot;string&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1832,
+    &quot;category&quot;: {
+      &quot;id&quot;: 0,
+      &quot;name&quot;: &quot;string&quot;
+    },
+    &quot;name&quot;: &quot;Max&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;string&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 0,
+        &quot;name&quot;: &quot;string&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1836,
+    &quot;category&quot;: {
+      &quot;id&quot;: 0,
+      &quot;name&quot;: &quot;string&quot;
+    },
+    &quot;name&quot;: &quot;Max&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;string&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 0,
+        &quot;name&quot;: &quot;string&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1838,
+    &quot;category&quot;: {
+      &quot;id&quot;: 0,
+      &quot;name&quot;: &quot;string&quot;
+    },
+    &quot;name&quot;: &quot;Max&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;string&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 0,
+        &quot;name&quot;: &quot;string&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
