@@ -1,0 +1,10 @@
+PROYECTO API PETSTORE - EVELYN BALSECA
+
+
+CONCLUSIONES-HALLAZGOS
+
+1. Las pruebas automatizadas de los cuatros escenarios se ejecutaron de manera correcta en un tiempo de 2.9 segundos.
+2. Los casos de pruebas realizados se baso en el lenguaje Gherkin.
+3. La generacion de reportes es muy completa y permite conocer el estado de la ejecucion de los casos de prueba, adicional es intuitiva para cualquier persona que lo lea.
+4. Para poder generar los casos de pruebas de consumo de APIs en el archivo .feature es necesario tener la documentacion técnico de los servicios, ya que nos permitira identificar los campos principales del servicio como por ejemplo el path, method , request y response.
+
