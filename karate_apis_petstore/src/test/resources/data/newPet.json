@@ -1,0 +1,16 @@
+{
+  "id": 12345,
+  "category": {
+    "id": 111,
+    "name": "Perro"
+  },
+  "name": "doggie",
+  "photoUrls": ["F:\EvelynDocumentos"],
+  "tags": [
+    {
+      "id": 22,
+      "name": "Mascota"
+    }
+  ],
+  "status": "available"
+}
